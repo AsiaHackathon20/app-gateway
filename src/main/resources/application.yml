@@ -1,0 +1,14 @@
+server:
+  port: 5000
+
+logging:
+  config: 'classpath:logback.xml'
+
+zuul:
+  routes:
+    core-service:
+      path: /api/**
+      url: http://localhost:7070/
+    ui:
+      path: /**
+      url: http://localhost:3000/
