@@ -8,7 +8,7 @@ zuul:
   routes:
     core-service:
       path: /api/**
-      url: http://localhost:7070/
+      url: http://58.182.223.185:7070/
     ui:
       path: /**
       url: http://localhost:3000/
